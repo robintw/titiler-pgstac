@@ -58,9 +58,9 @@ class _PostgresSettings(pydantic.BaseSettings):
     postgres_dbname: str
 
     db_min_conn_size: int = 1
-    db_max_conn_size: int = 10
+    db_max_conn_size: int = 1
     db_max_queries: int = 50000
-    db_max_inactive_conn_lifetime: float = 300
+    db_max_inactive_conn_lifetime: float = 100
 
     class Config:
         """model config"""
